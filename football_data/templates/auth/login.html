@@ -1,12 +1,11 @@
 <html>
-    <title>Register</title>
+    <title>Login</title>
     <body>
-        <div>This is register page</div>
+        <div>This is login page</div>
         <form method="POST">
             {{ form.csrf_token }}
             {{ form.username.label }}<br>{{ form.username }}<br>
             {{ form.password.label }}<br>{{ form.password }}<br>
-            {{ form.password2.label }}<br>{{ form.password2 }}<br>
             {{ form.submit }}<br>
         </form>
     </body>

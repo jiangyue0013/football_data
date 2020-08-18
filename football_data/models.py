@@ -18,4 +18,4 @@ class User(db.Model):
         self._password_hash = generate_password_hash(password)
     
     def validate_password(self, password):
-        return check_password_hash(self.password, password)
+        return check_password_hash(self._password_hash, password)
