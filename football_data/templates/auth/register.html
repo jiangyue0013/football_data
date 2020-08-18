@@ -1,0 +1,13 @@
+<html>
+    <title>Index</title>
+    <body>
+        <div>This is register page</div>
+        <form method="POST">
+            {{ form.csrf_token }}
+            {{ form.username.label }}<br>{{ form.username }}<br>
+            {{ form.password.label }}<br>{{ form.password }}<br>
+            {{ form.password2.label }}<br>{{ form.password2 }}<br>
+            {{ form.submit }}<br>
+        </form>
+    </body>
+</html>
